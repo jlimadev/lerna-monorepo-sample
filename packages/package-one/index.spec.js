@@ -1,7 +1,8 @@
 const packageOne = require('.');
 describe('test package-one', () => {
   it('Should test package-one', () => {
-    const result = packageOne('Jonathan');
-    expect(result).toBe(result);
+    const name = 'Jonathan';
+    const result = packageOne(name);
+    expect(result).toBe(`Hello ${name}, i am package-one`);
   });
 });
